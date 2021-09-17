@@ -1,0 +1,85 @@
+html, body {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    background: #ffffff;
+}
+
+/* temos as unidades de medidade vh, vw e fr sendo:
+    vh - viewport height, podemos pegar uma porcentagem da altura (height) da tela (elemento)
+    vw - viewport width, podemos pegar uma porcentagem da largura (width) da tela (elemento)
+    fr - fraction, podemos pegar x fração da tela, seja na vertical ou na horizontal
+*/
+
+/* 
+ Quando trabalhos com grid, temos dois elementos principais: o "container" (que pode ter qualquer nome), 
+ que precisa ser iniciado como grid, precisa ter as colunas definidas assim como as linhas. 
+
+ Uma das maneiras de se definir a estrutura do grid é com grid-template-areas, que basicamente vai construir
+ o grid com base na "string" definida em grid-area
+*/
+.containerb {
+    display: grid;
+    grid-template-columns: 30vw 70vw;
+    grid-template-rows: 20vh 70vh 10vh;
+    grid-template-areas: "cabecalho cabecalho"
+                         "lateral principal"
+                         "rodape rodape";
+    /*gap: 10px;*/                     
+}
+
+/*
+Para acessar uma tag no css, chamamos pelo nome da tag, exemplo: div, h1, p, header etc
+Para acessar uma classe no css, chamamos pelo nome antecedido por um ponto, exemplo: .container
+Para acessar uma elemento pelo id, utilizamos o id antecedido pela #, exemplo: #botaoEnviar
+*/
+
+/* Para definir qual area um elemento vai utilizar, utilizamos a mesma propriedade grid-area*/
+header {
+    grid-area: cabecalho;
+    background: #8e44ad;
+}
+
+main {
+    grid-area: principal;
+    background: #ecf0f1;
+    justify-self: center;
+}
+
+aside {
+    grid-area: lateral;
+    background: #27ae60
+}
+
+footer {
+    grid-area: rodape;
+    background: #34495e;
+}
+
+/* Dentro de um elemento, é melhor utilizar fr, para garantir que a divisão seja feita a partir da altura/largura do elemento*/
+.principalDivisao {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 9fr;
+    grid-template-areas: "p p p"
+                         ". img .";
+}
+
+.paragrafo {
+    grid-area: p;
+}
+
+.imagem {
+    grid-area: img;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 10fr;
+    grid-template-areas: "bi bi bi bi bi bi bi bi bi bi";
+}
+
+.bi .bi-sd-card {
+    grid-area: bi;
+}
