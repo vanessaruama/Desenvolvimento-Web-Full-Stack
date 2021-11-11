@@ -43,4 +43,7 @@ localStorage.setItem() para criar um novo par de chave: valor
 localStorage.getItem() para recuperar o valor do par chave: valor
 localStorage.romoveItem() para remover um par específico
 localStorage.clear() apaga TODOS os pares gravados pra aquele domínio
+
+block - embaixo um do outro
+inline - ao lado
 */

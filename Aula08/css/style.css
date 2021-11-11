@@ -1,0 +1,81 @@
+html, body {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    background: #ffffff;
+}
+
+.containerBox {
+    display: grid;
+    grid-template-rows: 5vh 10vh 5vh 60vh 20vh;
+    grid-template-columns: 10vw 80vw 10vw;
+    grid-template-areas: "teto teto teto"
+                         ". LogoBuscaCarrinho ."
+                         ". cabecalho ."
+                         ". Produtos ."
+                         "rodape rodape rodape";
+
+}
+
+.logoBuscaCarrinho {
+    grid-area: LogoBuscaCarrinho;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: "logo busca carrinho";
+}
+
+.produtos {
+    grid-area: Produtos;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+    grid-template-areas: "item1 item2 item3 item4"
+                         "item5 item6 item7 item8"
+                         "item9 item10 item11 item12"   
+                         "item13 item14 item15 item16";
+}
+
+.item > img {
+    object-fit:scale-down;
+    width: 100%;
+}
+
+.item {
+    background-color: darkmagenta;
+    justify-self: stretch;
+}
+
+
+
+.item1 {
+    grid-area: item1;
+}
+
+.item2 {
+    grid-area: item2;
+}
+
+.item3 {
+    grid-area: item3;
+}
+
+.item4 {
+    grid-area: item4;
+}
+
+nav {
+    background-color: papayawhip;
+    grid-area: teto;
+}
+
+header {
+    background-color: tomato;
+    grid-area: cabecalho;
+}
+
+footer {
+    background-color: darkgray;
+    grid-area: rodape;
+}

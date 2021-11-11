@@ -1,0 +1,187 @@
+html, body, footer {
+    margin:0 !important; 
+    padding:0 !important;
+    box-sizing: border-box !important;
+    background: #ffffff;
+}
+
+.containerBox {
+    display: grid;
+    grid-template-rows: 10vh 10vh 0vh 75vh 5vh;
+    grid-template-columns: 15vw 80vw 5vw;
+    grid-template-areas: "teto teto teto"
+                         "sidebar LogoBuscaCarrinho ."
+                         "sidebar Produtos ."
+                         "sidebar Produtos ."
+                         "rodape rodape rodape";
+
+}
+
+.logoBuscaCarrinho {
+    grid-area: LogoBuscaCarrinho;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: "logo busca carrinho";
+}
+
+.produtos {
+    grid-area: Produtos;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 0.5fr;
+    gap: 10px;
+    overflow-y: scroll;
+    /* Vamos utilizar grid-auto-rows
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "item1 item2 item3 item4"
+                         "item5 item6 item7 item8"
+                         "item9 item10 item11 item12"   
+                         "item13 item14 item15 item16"; */
+}
+
+@media only screen and (max-width: 640px) {
+    .produtos {
+      grid-template-columns: 1fr;
+    }
+
+    .item > img {
+        object-fit:scale-down;
+        width: 30%;
+        text-align: center; 
+    }
+
+    .containerBox {
+        display: grid;
+        grid-template-rows: 10vh 30vh 10vh 45vh 5vh;
+        grid-template-columns: 15vw 70vw 15vw;
+        grid-template-areas: ". teto ."
+                             ". sidebar  ."
+                             ". sidebar ."
+                             ". Produtos ."
+                             "rodape rodape rodape";
+    
+    }
+
+    aside> ul li a {
+        padding: 2px 10px;
+        display: inline-block;
+    
+        /* visual do link */
+        background-color:#EDEDED;
+        color: #333;
+        text-decoration: none;
+        border-bottom:3px solid #EDEDED;
+    }
+  }
+
+.item > img {
+    object-fit:cover;
+    height: 300px;
+    object-position: center 70%;
+    text-align: center; 
+}
+
+.item {
+    background-color: white;
+    justify-self: stretch;
+    text-align: center;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+  .item:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .itemText {
+    padding: 2px 16px;
+    height: 50%;
+  }
+
+.item > p {
+    text-align: left; 
+    /* topo | direita | inferior | esquerda */
+    margin: 2.5px auto 2.5px 15px;
+}
+
+nav {
+    background-color: papayawhip;
+    grid-area: teto;
+    object-position: center;
+    text-align: center;
+}
+
+.logo {
+    margin-top: 20px;
+}
+
+header {
+    grid-area: cabecalho;
+}
+
+footer {
+    background-color: #222;
+    grid-area: rodape;
+}
+
+.text-muted {
+    --bs-text-opacity: 1;
+    color: #fff!important;
+}
+
+/* sobreescrevendo bootstrap */
+.my-4{
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+.py-3{
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+.bg-light {
+    --bs-bg-opacity: 1;
+    background-color: transparent !important;
+}
+
+aside {
+    grid-area: sidebar;
+    overflow-y: scroll;
+}
+
+.icon-img {
+    height: 25px;
+    width: 25px;
+}
+
+.corzinha {
+    background-color: #51122B !important;
+}
+
+
+
+
+
+/* Css não produzido */
+/*
+ *  STYLE 4
+ */
+
+ ::-webkit-scrollbar-track
+ {
+     background-color: rgba(0,0,0,0.1);
+ }
+ 
+::-webkit-scrollbar
+ {
+     width: 5px;
+     background-color: rgba(255,255,255,1);
+ }
+ 
+::-webkit-scrollbar-thumb
+ {
+     background-color: rgb(255, 255, 255);;
+     border: 2px solid rgba(0,0,0,0.2);;
+ }
+ 

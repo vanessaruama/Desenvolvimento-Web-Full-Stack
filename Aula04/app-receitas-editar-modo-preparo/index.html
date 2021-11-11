@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/js/main.js"></script>
+    <script src="js/localforage.js"></script>
+    <title>Receitas</title>
+</head>
+<body>
+    <header>
+        <h1>👩‍🍳 Receitas</h1>
+    </header>
+    <section>
+        <label for="ingrediente">Ingrediente</label>
+        <input id="ingrediente" type="text" placeholder="Digite um ingrediente">
+        <input type="submit" value="Adicionar na receita" onclick="salvarIngrediente()"/>
+        
+        <input type="file" onchange="salvarImagem()"><br>
+        <img id="imagemReceitaID" src="" height="200" alt="Imagem da Receita...">
+
+        <h2>🥗 Ingredientes</h2>
+    <ul id="minhaLista">
+        <li><input id="botaoEditar" type="submit" value="Editar" onclick="habilitarEdicao()"/></li>
+    </ul>
+
+         <h2>🍳 Modo de Preparo</h2>
+    <textarea id="modoDePreparo" onkeyup="salvarPreparo()"></textarea>
+    <input type="submit" value="Salvar Preparo" onclick="salvarPreparo()"/>
+        
+</section>
+</body>
+</html>

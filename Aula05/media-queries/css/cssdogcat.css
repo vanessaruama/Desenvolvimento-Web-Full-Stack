@@ -1,0 +1,24 @@
+@media all and (orientation: portrait) { 
+    body {
+        background-image: url('/img/gato.jfif');
+        background-repeat:no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}
+
+@media all and (orientation: landscape) {
+    body {
+        background-image: url('/img/cachorro.jpg');
+        background-repeat:no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}
+
+
+

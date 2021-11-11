@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula de CSS</title>
+</head>
+<body>
+    <!-- Primeira de declarar um CSS, "inline" ou seja, dentro da tag (em em pouca utilização) -->
+    <h1 style="color: chartreuse;"></h1>
+
+    <!-- Segunda maneira de declarar CSS, usando a tag style, e dentro inserindo nosso código CSS -->
+    <style>
+     h1 { 
+        color: red; 
+        text-align: center; 
+     } 
+     
+     p { 
+       color: green; 
+       text-align: center; 
+     }
+
+     .artigo {
+         background-color: gold;
+     }
+
+     .artigo > h1 {
+         color:black;
+         background-color:fuchsia;
+     }
+
+     #conteudo {
+         background-color: maroon;
+     }
+    </style>
+     
+    <h1>Primeira Aula CSS</h1>
+    <p>Olá este texto está em letras verdes centralizado</p>
+    <p>Meu paragrafo, muito bacana, infelizmente novamente em verde...</p>
+
+    <div class="artigo">
+        <h1>Artigo sobre class em css</h1>
+        <p>Para adicionar uma classe, usamos o atributo, class. Deste forma, podemos especificar
+            estilos específicos para esta classe em questão.
+        </p>
+    </div>
+
+    <div id="conteudo">
+        <h1>Artigo sobre id em CSS</h1>
+        <p>Para adicionar um id, usamos o atributo id. Desta forma, podemos especificar estilos para este ID.</p>
+    </div>
+
+</body>
+</html>
+
+<!-- Dicas VSCode -->
+<!-- digitar a tag sem o < e apertar tecla tab -->
+<!-- para criar um tag com id, digitar tag # nome_do_id e aperta tab -->
+<!-- para criar um tag com classe, digitar tag . nome_da_classe e aperta tab -->

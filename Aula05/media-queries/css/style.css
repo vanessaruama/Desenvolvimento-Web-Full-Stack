@@ -1,0 +1,15 @@
+body {
+    background-color: #f82790;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+      background-color: #107b11 ;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    body {
+      background-color: lightblue;
+    }
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!--
+    <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
+    <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
+    <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
+    -->
+    <script src="/js/main.js"></script>
+    <script src="js/localforage.js"></script>
+    <script src="https://kit.fontawesome.com/b730292a05.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/framework7/framework7-bundle.min.css">
+    <title>Receitas</title>
+
+    <style>
+        .boxsizingBorder {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+    </style>
+</head>
+<body>
+  
+
+    <div class="page__background"></div>
+    <div class="page__content">
+
+        <div class="toolbar">       
+            <div class="toolbar__center">
+                👩‍🍳 Receitas
+            </div>
+        </div>
+
+        <div class="toolbar">       
+            <div class="toolbar__center">
+                👩‍🍳 Receitas
+            </div>
+        </div>
+        
+        <label>
+            <img id="imagemReceitaID" src="/img/placeholder.jpg" height="200" alt="Imagem da Receita...">
+            <input type="file" style="display:none" onchange="salvarImagem()">
+        </label>
+        
+        
+            <div class="toolbar">
+                <div class="toolbar__left">
+                    <input id="botaoEditar" type="submit" value="Editar"  class="toolbar-button" onclick="habilitarEdicao()"/>
+                </div>          
+                <div class="toolbar__center">
+                    🥗 Ingredientes
+                </div>
+              
+                <div class="toolbar__right">
+                    <button type="submit" class="toolbar-button" onclick="salvarIngrediente()"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                </div>
+              </div>
+            
+           
+              <ul id="minhaLista" class="list">   
+            <li> <input id="ingrediente" type="text" placeholder="Digite um ingrediente">
+                <label for="ingrediente">Ingrediente</label></li>
+            </ul>
+
+            <div class="toolbar">
+                <div class="toolbar__left"></div>
+                <div class="toolbar__center">
+                    🍳 Modo de Preparo
+                </div>
+              
+                <div class="toolbar__right">
+                    <button type="submit" class="toolbar-button" onclick="salvarIngrediente()"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                </div>
+              </div>
+            
+            <ul id="minhaListaDePreparos" class="list">
+                <li class="list-item">
+                  <div class="list-item__center">
+                    <textarea id="modoDePreparo" placeholder="Modo de preparo" style="width:100%" onkeyup="salvarPreparo()" class="textarea textarea--transparent .boxsizingBorder" placeholder="Text message"></textarea>
+                  </div>
+                </li>
+              </ul>
+
+
+        
+    </div>
+
+ <!--    <section>
+        <label for="ingrediente">Ingrediente</label>
+        <input id="ingrediente" type="text" placeholder="Digite um ingrediente">
+        <input type="submit" value="Adicionar na receita" onclick="salvarIngrediente()"/>
+        
+        <input type="file" onchange="salvarImagem()"><br>
+        <img id="imagemReceitaID" src="" height="200" alt="Imagem da Receita...">
+
+        <h2>🥗 Ingredientes</h2>
+    <ul id="minhaLista" class="list">
+        <li><input id="botaoEditar" type="submit" value="Editar" onclick="habilitarEdicao()"/></li>
+    </ul>
+
+         <h2>🍳 Modo de Preparo</h2>
+    <textarea id="modoDePreparo" class="textarea" rows="8" placeholder="Modo de preparo" onkeyup="salvarPreparo()"></textarea>
+    <input type="submit" value="Salvar Preparo" class="button button--outline" onclick="salvarPreparo()"/>
+        
+</section>
+
+ -->
+</body>
+</html>

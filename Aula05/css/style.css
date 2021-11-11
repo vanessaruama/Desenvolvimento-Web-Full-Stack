@@ -1,0 +1,22 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.matrix {
+    background-color: black;
+    color: chartreuse;
+}
+
+.pilulaVermelha > h1 {
+    color: crimson;
+}
+
+.pilulaVermelha > p {
+    color:orchid;
+}
+
+.pilulaAzul {
+    color: dodgerblue;
+}

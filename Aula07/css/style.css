@@ -1,0 +1,114 @@
+html, body {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    background: #ffffff;
+}
+
+.figurinhas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 0.25fr 2fr 0.25fr 0.5fr;
+    gap: 5px;
+    grid-template-areas: "f1 f2 f3"
+                         "bd1 bd2 bd3"
+                         "f4 f5 f6"  
+                         "bd4 bd5 bd6"
+                         ". b .";
+}
+
+.botaoDaAlegria {
+    grid-area: b;
+}
+
+.figuraSizer {
+    width: 195px;
+    height: 259px;
+}
+
+.figura1 {
+    grid-area: f1;
+    justify-self: center;
+}
+
+.figura2 {
+    grid-area: f2;
+    justify-self: center;
+}
+
+.figura3 {
+    grid-area: f3;
+    justify-self: center;
+}
+
+.figura4 {
+    grid-area: f4;
+    justify-self: end;
+}
+
+.figura5 {
+    grid-area: f5;
+    justify-self: stretch;
+}
+
+.figura6 {
+    grid-area: f6;
+    justify-self: start;
+}
+
+.botao1 {
+    grid-area: bd1;
+}
+
+.botao2 {
+    grid-area: bd2;  
+}
+
+.botao3 {
+    grid-area: bd3;  
+}
+
+.botao4 {
+    grid-area: bd4; 
+}
+
+.botao5 {
+    grid-area: bd5; 
+}
+
+.botao6 {
+    grid-area: bd6; 
+}
+
+
+.cabecalho {
+    background: #2ecc71;
+}
+
+.container1 {
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 10vh 85vh 5vh;
+    grid-template-areas: "h h"
+                         "m a"
+                         "f f"    
+  }
+  
+  header {
+    grid-area: h;
+  }
+  
+  main {
+    background: #000;
+    grid-area: m;
+  }
+  
+  aside {
+    background: #8e44ad;
+    grid-area: a;
+  }
+  
+  footer {
+    background: #c0392b;
+    grid-area: f;
+  }

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula CSS Parte 2</title>
+</head>
+<body>
+    <!-- -------------------------------------------------- -->
+    <style>
+        .palmeiras {
+            background-color: white;
+            color: green;
+        }
+
+        .palmeiras > h1 {
+            color: red;
+            text-align: center;
+        }
+        #matrix {
+            color: lime;
+            background-color: black;
+        }
+
+    </style>
+     <!-- -------------------------------------------------- -->
+    <h1>Este bloco não é do Palmeiras</h1>
+    <p>Este bloco não possui a classe palmeiras do CSS</p>
+
+    <div class="palmeiras">
+        <h1>Bloco do Palmeiras</h1>
+        <p>Este bloco é do palmeiras, pois está dentro da classe palmeiras</p>
+    </div>
+    <hr>
+    <div class="palmeiras">
+        <h1>Bloco da Portuguesa</h1>
+        <p>Este bloco é do palmeiras também, pois classes podem ser utilizadas diversas vezes</p>
+    </div>
+    <hr>
+    <div id="matrix">
+        <h1>Essa div é a matrix e pertence a Matrix</h1>
+        <p>Só que, ao invés classe ela utiliza id.</p>
+    </div>
+    <hr>
+    <div id="matrix">
+        <h1>Essa div é a matrix e pertence a Matrix</h1>
+        <p>Só que, ao invés classe ela utiliza id.</p>
+    </div>
+    <hr>
+</body>
+</html>
