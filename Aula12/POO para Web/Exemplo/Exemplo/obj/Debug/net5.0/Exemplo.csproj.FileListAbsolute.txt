@@ -1,0 +1,16 @@
+C:\FECAP\OneDrive - Fundação Escola de Comércio Álvares Penteado\Aulas_ADS\FullStack\Código\Aula12\POO para Web\Exemplo\Exemplo\bin\Debug\net5.0\Exemplo.exe
+C:\FECAP\OneDrive - Fundação Escola de Comércio Álvares Penteado\Aulas_ADS\FullStack\Código\Aula12\POO para Web\Exemplo\Exemplo\bin\Debug\net5.0\Exemplo.deps.json
+C:\FECAP\OneDrive - Fundação Escola de Comércio Álvares Penteado\Aulas_ADS\FullStack\Código\Aula12\POO para Web\Exemplo\Exemplo\bin\Debug\net5.0\Exemplo.runtimeconfig.json
+C:\FECAP\OneDrive - Fundação Escola de Comércio Álvares Penteado\Aulas_ADS\FullStack\Código\Aula12\POO para Web\Exemplo\Exemplo\bin\Debug\net5.0\Exemplo.runtimeconfig.dev.json
+C:\FECAP\OneDrive - Fundação Escola de Comércio Álvares Penteado\Aulas_ADS\FullStack\Código\Aula12\POO para Web\Exemplo\Exemplo\bin\Debug\net5.0\Exemplo.dll
+C:\FECAP\OneDrive - Fundação Escola de Comércio Álvares Penteado\Aulas_ADS\FullStack\Código\Aula12\POO para Web\Exemplo\Exemplo\bin\Debug\net5.0\ref\Exemplo.dll
+C:\FECAP\OneDrive - Fundação Escola de Comércio Álvares Penteado\Aulas_ADS\FullStack\Código\Aula12\POO para Web\Exemplo\Exemplo\bin\Debug\net5.0\Exemplo.pdb
+C:\FECAP\OneDrive - Fundação Escola de Comércio Álvares Penteado\Aulas_ADS\FullStack\Código\Aula12\POO para Web\Exemplo\Exemplo\obj\Debug\net5.0\Exemplo.csproj.AssemblyReference.cache
+C:\FECAP\OneDrive - Fundação Escola de Comércio Álvares Penteado\Aulas_ADS\FullStack\Código\Aula12\POO para Web\Exemplo\Exemplo\obj\Debug\net5.0\Exemplo.GeneratedMSBuildEditorConfig.editorconfig
+C:\FECAP\OneDrive - Fundação Escola de Comércio Álvares Penteado\Aulas_ADS\FullStack\Código\Aula12\POO para Web\Exemplo\Exemplo\obj\Debug\net5.0\Exemplo.AssemblyInfoInputs.cache
+C:\FECAP\OneDrive - Fundação Escola de Comércio Álvares Penteado\Aulas_ADS\FullStack\Código\Aula12\POO para Web\Exemplo\Exemplo\obj\Debug\net5.0\Exemplo.AssemblyInfo.cs
+C:\FECAP\OneDrive - Fundação Escola de Comércio Álvares Penteado\Aulas_ADS\FullStack\Código\Aula12\POO para Web\Exemplo\Exemplo\obj\Debug\net5.0\Exemplo.csproj.CoreCompileInputs.cache
+C:\FECAP\OneDrive - Fundação Escola de Comércio Álvares Penteado\Aulas_ADS\FullStack\Código\Aula12\POO para Web\Exemplo\Exemplo\obj\Debug\net5.0\Exemplo.dll
+C:\FECAP\OneDrive - Fundação Escola de Comércio Álvares Penteado\Aulas_ADS\FullStack\Código\Aula12\POO para Web\Exemplo\Exemplo\obj\Debug\net5.0\ref\Exemplo.dll
+C:\FECAP\OneDrive - Fundação Escola de Comércio Álvares Penteado\Aulas_ADS\FullStack\Código\Aula12\POO para Web\Exemplo\Exemplo\obj\Debug\net5.0\Exemplo.pdb
+C:\FECAP\OneDrive - Fundação Escola de Comércio Álvares Penteado\Aulas_ADS\FullStack\Código\Aula12\POO para Web\Exemplo\Exemplo\obj\Debug\net5.0\Exemplo.genruntimeconfig.cache
